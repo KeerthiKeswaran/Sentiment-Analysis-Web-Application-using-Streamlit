@@ -12,7 +12,7 @@ The Sentiment Analysis-NLP Tool is a web application built using Streamlit, desi
 
 1. **Search and Keyword Selection:** Users can input a search term or choose from a list of recommended keywords related to various topics such as climate, global issues, mental health, etc.
 
-2. **Data Retrieval:** The tool retrieves relevant articles from a dataset stored in an Excel sheet, filtering them based on the selected search term or keyword.
+2. **Data Retrieval:** The tool retrieves relevant articles from a dataset stored in an Excel sheet (Lesser for now), filtering them based on the selected search term or keyword.
 
 ![Screenshot 2024-04-09 170802](https://github.com/KeerthiKeswaran/Sentiment-Analysis-Web-Application-using-Streamlit/assets/154911121/90de879f-6d27-4e81-be03-356b7e80e612)
 
