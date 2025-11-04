@@ -103,8 +103,7 @@ If your backend runs on a different host or port, update the base API URL in:
 ### Latest Snapshot:
 
 
-[Snapshot](<img width="1920" height="820" alt="Image" src="https://github.com/user-attachments/assets/25df1fcd-0f5a-4e0c-9a98-4811eba3cb86" />)
-
+![Dashboard Preview](./assets/snap-latest.png)
 
 
 
