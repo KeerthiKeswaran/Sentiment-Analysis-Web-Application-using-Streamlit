@@ -3,7 +3,112 @@ Streamlit tool for sentiment analysis on text/images with visualizations. Uses p
 
 Developer : KeerthiKeswaran
 
-The Sentiment Analysis-NLP Tool is a web application built using Streamlit, designed to analyze sentiment in textual content. The tool incorporates various functionalities to facilitate sentiment analysis on both text and images.
+The Sentiment Analysis-NLP Tool is a web application built using Newspaper3k and Pytesseract, designed to analyze sentiment in textual content. The tool incorporates various functionalities to facilitate sentiment analysis on both text and images.
+
+
+# Social Media Sentiment Analysis — Setup Guide
+
+This project consists of two main parts:
+
+- **Server:** FastAPI backend for sentiment analysis  
+- **Client:** React + TypeScript + Vite frontend dashboard  
+
+---
+
+## 1. Server Setup (FastAPI)
+
+### 1.1 Navigate to the server directory
+```bash
+cd server
+```
+
+### 1.2 Create and activate a virtual environment
+```bash
+python -m venv venv
+```
+
+Activate it:
+Windows (PowerShell):
+```bash
+.\venv\Scripts\Activate
+```
+
+macOS/Linux:
+
+```bash
+source venv/bin/activate
+```
+
+1.3 Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+1.4 Run the FastAPI server
+```bash
+uvicorn main:app --reload
+```
+
+The API will be available at:
+```bash
+http://127.0.0.1:8000
+```
+
+Interactive API documentation:
+```bash
+http://127.0.0.1:8000/docs
+```
+
+2. Client Setup (React + Vite)
+2.1 Navigate to the client directory
+```bash
+cd client
+```
+
+2.2 Install dependencies
+```bash
+npm install
+```
+
+If you encounter compatibility issues, use Node.js v20 (LTS):
+
+```bash
+nvm install 20
+nvm use 20
+node -v
+```
+
+2.3 Start the development server
+```bash
+npm run dev
+```
+
+The frontend will be available at:
+```bash
+http://localhost:5173
+```
+
+3. Connecting Frontend and Backend
+The client is configured to connect to the backend running at:
+```bash
+http://127.0.0.1:8000
+```
+
+If your backend runs on a different host or port, update the base API URL in:
+```bash
+/client/src/utils/api.ts
+```
+
+
+### Latest Snapshot:
+
+
+[Snapshot](<img width="1920" height="820" alt="Image" src="https://github.com/user-attachments/assets/25df1fcd-0f5a-4e0c-9a98-4811eba3cb86" />)
+
+
+
+
+## Streamlit app:
 
 ![Screenshot 2024-04-09 170651](https://github.com/KeerthiKeswaran/Sentiment-Analysis-Web-Application-using-Streamlit/assets/154911121/08143b81-1eb9-4fdc-acaf-96511874f8ba)
 
